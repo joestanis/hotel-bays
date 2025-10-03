@@ -1,0 +1,9 @@
+# Ignore all .log files
+*.log
+
+# Ignore all files ending with .tmp in any directory
+**/*.tmp
+
+# Ignore the JetBrains idea directory and its contents
+.idea/
+

@@ -1,0 +1,2 @@
+
+YUI.add('node-event-simulate',function(Y){Y.Node.prototype.simulate=function(type,options){Y.Event.simulate(Y.Node.getDOMNode(this),type,options);};},'3.6.0',{requires:['node-base','event-simulate']});

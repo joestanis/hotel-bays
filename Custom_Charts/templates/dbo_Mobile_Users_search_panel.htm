@@ -1,0 +1,58 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" {$all_checkbox}>{BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" {$any_checkbox}>{BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_Id}
+			<a href="#" id="addSearchControl_Id" class="addSearchControl" {$addSearchControl_Id_attrs}>Id</a><br>
+		{END addSearch_Id}
+		{BEGIN addSearch_login}
+			<a href="#" id="addSearchControl_login" class="addSearchControl" {$addSearchControl_login_attrs}>Login</a><br>
+		{END addSearch_login}
+		{BEGIN addSearch_password}
+			<a href="#" id="addSearchControl_password" class="addSearchControl" {$addSearchControl_password_attrs}>Password</a><br>
+		{END addSearch_password}
+		{BEGIN addSearch_fullname}
+			<a href="#" id="addSearchControl_fullname" class="addSearchControl" {$addSearchControl_fullname_attrs}>Fullname</a><br>
+		{END addSearch_fullname}
+	</div>
+	
+	<table class="controlsBlock">
+	{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">{$searchtype} {$searchcontrol} {$searchcontrol1}</td>
+		</tr>
+	{END searchCtrlBlock}
+	</table>
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>

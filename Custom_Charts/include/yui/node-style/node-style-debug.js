@@ -1,0 +1,2 @@
+
+YUI.add('node-style',function(Y){(function(Y){Y.mix(Y.Node.prototype,{setStyle:function(attr,val){Y.DOM.setStyle(this._node,attr,val);return this;},setStyles:function(hash){Y.DOM.setStyles(this._node,hash);return this;},getStyle:function(attr){return Y.DOM.getStyle(this._node,attr);},getComputedStyle:function(attr){return Y.DOM.getComputedStyle(this._node,attr);}});Y.NodeList.importMethod(Y.Node.prototype,['getStyle','getComputedStyle','setStyle','setStyles']);})(Y);},'3.6.0',{requires:['dom-style','node-base']});

@@ -1,0 +1,2 @@
+
+YUI.add('dd-drop-plugin',function(Y){var Drop=function(config){config.node=config.host;Drop.superclass.constructor.apply(this,arguments);};Drop.NAME="dd-drop-plugin";Drop.NS="drop";Y.extend(Drop,Y.DD.Drop);Y.namespace('Plugin');Y.Plugin.Drop=Drop;},'3.6.0',{skinnable:false,requires:['dd-drop']});

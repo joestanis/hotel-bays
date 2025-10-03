@@ -1,0 +1,2 @@
+
+YUI.add('base-pluginhost',function(Y){var Base=Y.Base,PluginHost=Y.Plugin.Host;Y.mix(Base,PluginHost,false,null,1);Base.plug=PluginHost.plug;Base.unplug=PluginHost.unplug;},'3.6.0',{requires:['base-base','pluginhost']});
